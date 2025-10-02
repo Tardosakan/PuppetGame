@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,7 +7,7 @@ public class AreaExit : MonoBehaviour
 {
 
     [SerializeField] string sceneToLoad;
-
+    [SerializeField] string transitionAreaName;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +25,7 @@ public class AreaExit : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Player.instance.transitionName = transitionAreaName;
             SceneManager.LoadScene(sceneToLoad);
         }
     }

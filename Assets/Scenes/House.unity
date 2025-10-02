@@ -127,13 +127,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3919032882705593306, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919032882705593306, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919032882705593306, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919032882705593306, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919032882705593306, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919032882705593306, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717434987919636749, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717434987919636749, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: transitionName
+      value: House - 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717434987919636749, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: transitionAreaName
+      value: House - 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5826008146807780066, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
       propertyPath: m_Name
       value: Area Exit
       objectReference: {fileID: 0}
     - target: {fileID: 6311617572285974667, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6311617572285974667, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -141,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6311617572285974667, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0074816775
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6311617572285974667, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -172,8 +208,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7221416410689417131, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
-      propertyPath: sceneToLoad
-      value: Town
+      propertyPath: transitionName
+      value: House - 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221416410689417131, guid: a2a42aaf798f00a4ca771cbd196a4bc0, type: 3}
+      propertyPath: transitionAreaName
+      value: House - 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -5,12 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public static Player instance;
+
     [SerializeField] Rigidbody2D playerRigidBody;
     [SerializeField] Animator playerAnimator;
+
     [SerializeField] int moveSpeed = 1;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public string transitionName;
+
+    // Called when the script instance is being loaded
+    void Awake()
     {
         if (instance != null && instance != this)
         {
@@ -22,6 +26,12 @@ public class Player : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame
