@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] Rigidbody2D playerRigidBody;
     [SerializeField] Animator playerAnimator;
+    [SerializeField] int moveSpeed = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,7 +20,7 @@ public class Player : MonoBehaviour
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
 
-        playerRigidBody.linearVelocity = new Vector2(horizontalMovement, verticalMovement);
+        playerRigidBody.linearVelocity = new Vector2(horizontalMovement, verticalMovement) * moveSpeed;
 
         playerAnimator.SetFloat("movementX", playerRigidBody.linearVelocity.x);
         playerAnimator.SetFloat("movementY", playerRigidBody.linearVelocity.y);

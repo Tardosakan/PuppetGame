@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - SolidObjects
   - 
   - 
   - 
@@ -38,14 +38,26 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
   - name: Background
     uniqueID: 3972234293
+    locked: 0
+  - name: NonCollisionLow
+    uniqueID: 1414585875
+    locked: 0
+  - name: CollisionLow
+    uniqueID: 1619949727
     locked: 0
   - name: Player
     uniqueID: 2707860953
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: CollisionHigh
+    uniqueID: 2157883751
+    locked: 0
+  - name: NonCollisionHigh
+    uniqueID: 983821269
     locked: 0
   m_RenderingLayers:
   - Default
