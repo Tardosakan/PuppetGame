@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745001a975505224c88cc80ba79061e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionName: House Door
+  transitionAreaName: 
 --- !u!1 &5826008146807780066
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,4 +138,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Town
-  transitionName: Town - House
+  transitionAreaName: 
+  theAreaEntry: {fileID: 5717434987919636749}
