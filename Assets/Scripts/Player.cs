@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class Player : MonoBehaviour
     [SerializeField] int moveSpeed = 1;
 
     public string transitionName;
+
+    private Vector3 bottomLeftEdge;
+    private Vector3 topRightEdge;
+
+    [SerializeField] Tilemap tilemap;
 
     // Called when the script instance is being loaded
     void Awake()
@@ -31,7 +37,8 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        bottomLeftEdge = tilemap.localBounds.min;
+        topRightEdge = tilemap.localBounds.max;
     }
 
     // Update is called once per frame
@@ -50,6 +57,12 @@ public class Player : MonoBehaviour
             playerAnimator.SetFloat("lastX", horizontalMovement);
             playerAnimator.SetFloat("lastY", verticalMovement);
         }
+
+        transform.position = new Vector3(
+           Mathf.Clamp(transform.position.x, bottomLeftEdge.x, topRightEdge.x),
+           Mathf.Clamp(transform.position.y, bottomLeftEdge.y, topRightEdge.y),
+           Mathf.Clamp(transform.position.z, bottomLeftEdge.z, topRightEdge.z)
+        );
 
     }
 }
